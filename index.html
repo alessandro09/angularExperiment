@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <!-- polyfills -->
+        <script src="node_modules/angular/angular.js"></script>
+
+        <!-- Modules -->
+        <script src="src/app.module.js"></script>
+        <script src="src/components/components.module.js"></script>
+        <script src="src/components/mask/mask.module.js"></script>
+        <script src="src/components/caret/caret.module.js"></script>
+        <script src="src/teste/teste.module.js"></script>
+
+        <!-- services -->
+        <script src="src/components/mask/mask.service.js"></script>
+        <script src="src/components/caret/caret.service.js"></script>
+
+        <!-- directives -->
+        <script src="src/components/mask/mask.directive.js"></script>
+        <script src="src/components/caret/caret.directive.js"></script>
+
+        <!-- controllers -->
+        <script src="src/teste/teste.controller.js"></script>
+
+
+        <div ng-app="app">
+            <ng-include src="'src/teste/teste.html'"></ng-include>
+        </div>
+    </body>
+</html>
